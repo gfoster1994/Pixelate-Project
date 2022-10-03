@@ -11,3 +11,12 @@ addRow.onclick = function makeRow() {
     }
     table.appendChild(row)
 }
+
+table.onclick = function colorize(event){
+    const target = event.target
+    if (target.className.length) {
+        target.className = ''
+    } else {
+        target.className = 'red'
+    }
+}
